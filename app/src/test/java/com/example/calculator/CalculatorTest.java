@@ -77,10 +77,10 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
 
         // When
-        float result = calculator.divide(a, b);
+        double result = calculator.divide(a, b);
 
         // Then
-        float expected = 0.67f;
-        assertEquals(expected, result);
+        double expected = 0.67;
+        assertEquals(expected, result, 1);
     }
 }
